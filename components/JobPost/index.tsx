@@ -55,9 +55,10 @@ const JobPost = ({ post = [], onBack }: JobPostProps) => {
                 {section.label}
               </Heading>
               {
-                section.text.map((text) => {
+                section.text.map((text, index) => {
                   return (
                     <Text
+                      key={index}
                       className={section.label === JobPostSectionTitle['JOB_TITLE'] ? 'job-title' : ''}
                       sx={{
                         '&.job-title': {

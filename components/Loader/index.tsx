@@ -1,7 +1,7 @@
 import React from 'react';
 import { Center, CenterProps, Spinner } from '@chakra-ui/react';
 
-const Loader = React.forwardRef<HTMLDivElement, CenterProps>(({ ...props }, ref) => {
+const Loader = React.forwardRef<HTMLDivElement, CenterProps>(function Loader({ ...props }, ref) {
   return (
     <Center
       ref={ref}

@@ -10,7 +10,7 @@ export interface FileCardProps extends FlexProps {
   onRemove: (name: string) => void;
 }
 
-const FileCard = React.forwardRef<HTMLDivElement, FileCardProps>(({ name, onRemove, ...props }, ref) => {
+const FileCard = React.forwardRef<HTMLDivElement, FileCardProps>(function FileCard({ name, onRemove, ...props }, ref) {
   return (
     <Flex
       ref={ref}

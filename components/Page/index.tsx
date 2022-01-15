@@ -10,7 +10,7 @@ export const HEADER_CONTENT_FOOTER: Pick<GridProps, 'templateAreas' | 'templateR
   templateColumns: 'auto'
 }
 
-const Page = React.forwardRef<HTMLDivElement, GridProps>(({ ...props }, ref) => {
+const Page = React.forwardRef<HTMLDivElement, GridProps>(function Page({ ...props }, ref) {
   return (
     <Grid
       ref={ref}
@@ -20,7 +20,7 @@ const Page = React.forwardRef<HTMLDivElement, GridProps>(({ ...props }, ref) => 
   )
 });
 
-export const Header = React.forwardRef<HTMLDivElement, GridItemProps>(({ ...props }, ref) => {
+export const Header = React.forwardRef<HTMLDivElement, GridItemProps>(function Header({ ...props }, ref) {
   return (
     <GridItem
       ref={ref}
@@ -35,7 +35,7 @@ export const Header = React.forwardRef<HTMLDivElement, GridItemProps>(({ ...prop
   )
 });
 
-export const Content = React.forwardRef<HTMLDivElement, GridItemProps>(({ ...props }, ref) => {
+export const Content = React.forwardRef<HTMLDivElement, GridItemProps>(function Content({ ...props }, ref) {
   return (
     <GridItem 
       ref={ref}
