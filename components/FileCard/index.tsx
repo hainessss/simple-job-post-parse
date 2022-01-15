@@ -17,7 +17,7 @@ const FileCard = React.forwardRef<HTMLDivElement, FileCardProps>(function FileCa
       borderRadius={4}
       backgroundColor='white'
       boxShadow='0px 2px 16px 0px rgba(0, 0, 0, 0.16)'
-      padding='4'
+      padding='2'
       alignItems='center'
       {...props }
     >

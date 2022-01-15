@@ -40,6 +40,7 @@ export const Content = React.forwardRef<HTMLDivElement, GridItemProps>(function 
     <GridItem 
       ref={ref}
       gridArea='content'
+      overflowY='scroll'
       backgroundColor='gray.100'
       {...props }
     />

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header>
-        <Heading as='h1'>
+        <Heading as='h1' fontSize={28}>
           Job Posting Parser
         </Heading>
       </Header>

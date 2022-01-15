@@ -33,7 +33,7 @@ export default function UploadArea({ onUpload, ...props }: UploadAreaProps & Dro
       borderRadius={4}
       borderColor='gray.500'
       cursor='pointer'
-      height={350}
+      height={325}
       paddingX={4}
       {...getRootProps()}
     >

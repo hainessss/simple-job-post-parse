@@ -16,7 +16,7 @@ export const JOB_POST_SECTIONS_TO_RENDER: JobPostSectionTitle[] = [
 ];
 
 const jobTitleStyles: BoxProps = {
-  fontSize: 40,
+  fontSize: 32,
   lineHeight: 1,
   fontWeight: 'light'
 };
