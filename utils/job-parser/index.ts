@@ -41,7 +41,7 @@ export const parseJobPosting = (text: string): ParseJobPostResponse => {
       currentSectionLabel = sectionLabel;
       
       // grab any text after label
-      const remainingText = section.split(/:/)?.[1]?.trim();
+      const remainingText = section.split(/(:)/).slice(2).join('').trim();
       if (remainingText) {
         currentSectionText.push(remainingText);
       }
